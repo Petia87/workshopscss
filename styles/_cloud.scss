@@ -1,0 +1,28 @@
+@import "variables";
+@import "mixin";
+
+.cloud {
+    background-color: $color_dark;
+
+    .cloud_h2,
+    .cloud_p {
+        color: $color_light;
+    }
+
+    .cloud_h2 {
+        @include h2;
+    }
+
+    .cloud_p {
+        @include p;
+        padding-bottom: 2rem;
+    }
+
+    .cloud_btn {
+        @include button;
+        border: 1px solid $bacground_dark;
+        background-color: $bacground_dark;
+        color: $color_light;
+    }
+    
+}

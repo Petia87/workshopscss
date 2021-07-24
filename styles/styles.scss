@@ -1,0 +1,121 @@
+@import "navigation";
+@import "show";
+@import "stat";
+@import "cliLangCloud";
+@import "footer";
+@import "variables";
+@import "cloud";
+@import "lang";
+@import "second";
+@import"doc";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+}
+
+
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2rem;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+ul,a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0  3px 10px rgb(0 0 0 / 20%);
+    padding:0.5rem;
+    margin: 1rem;
+}
+
+@media (max-width: 750px) {
+    
+    h1, h2 {
+        font-weight: 300;
+        line-height: 1.4rem;
+    }
+    .container, .showcase, .stats__colum, .cloud, .footer,.footer_container,.navigation {
+        display: flex;
+        flex-direction: column;
+       text-align: center;
+    }
+    .showcase, .showcase-form,.img, .cloud,.languages,.footer,.cli,.navigation{
+        width: 100%;
+    }
+    .showcase, .grid,.showcase-text{
+        padding-top: 5rem;   
+    }
+    .stats{
+        padding-top: 18rem;
+        text-align: center;
+        width: 70%;
+
+    }
+  
+    .showcase__p {
+        font-size: 1rem;
+        font-weight: 300;
+        padding: 1.5rem 0;
+    }
+    .showcase h1 {
+        font-size: 2.5rem;
+    }
+    .showcase-form, .card, .cli__card__h3 {
+        display: block;
+    }
+    .cloud {
+        background-color: rgb(4, 122, 237);
+    }
+    .cloud_h2 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 350;
+        line-height: 2.3rem;
+    }
+    .cloud_p {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 300;
+        line-height: 1.7rem;
+        padding-bottom: 2rem;
+    }
+    
+}
+
+
+
+
+
+
+
+

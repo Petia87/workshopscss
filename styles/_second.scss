@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixin";
+
+/*features*/
+.features {
+    color: $color_light;
+    background-color: $color_dark;
+
+    .features_flex {
+        @include flex_wrap;
+        justify-content: space-between;
+        margin: 0 4rem;
+
+        .features__container {
+            width: 55%;
+            text-align: left;
+            padding-bottom: 2rem;
+
+            h2 {
+                @include h2;
+                font-size: 2.6rem;
+                padding-top: 1.5rem;
+            }
+
+            p {
+                @include p;
+                padding-top: 1rem;
+            }
+        }
+
+        .features__img {
+            width: 26%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+/*loruki*/
+.loruki {
+    color: $color_full_dark;
+    background-color: $bacground_light;
+
+    .loruki_flex {
+        @include flex_wrap;
+        justify-content: space-between;
+        margin: 0 4rem;
+        padding-top: 5rem;
+
+        .loruki__container {
+            width: 55%;
+            text-align: left;
+            padding-bottom: 2rem;
+
+            h2 {
+                @include h2;
+                padding-top: 1.5rem;
+                font-size: 1.7rem;
+            }
+
+            p {
+                @include p;
+                font-size: 1.1rem;
+            }
+        }
+
+        .loruki__img {
+            width: 26%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*main-features*/
+.main-features_flex {
+    @include p;
+    @include flex_wrap;
+    .network,
+    .laptop,
+    .database,
+    .power,
+    .upload,
+    .server {
+        display: flex;
+        padding: 3rem 1rem;
+        font-size: 1rem;
+    }
+    .server {
+        width: 100%;
+        p {
+            display: inline-block;
+            width: 80%;
+        }
+    }
+
+    .network {
+        width: 60%;
+    }
+    .laptop,
+    .database,
+    .power,
+    .upload {
+        width: 27%;
+    }
+    .fas {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 750px) {
+    .features .features_flex .features__container,
+    .loruki .loruki_flex .loruki__container {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .loruki .loruki_flex .loruki__img,
+    .features .features_flex .features__img {
+        width: 70%;
+    }
+
+    .main-features_flex {
+        .network,
+        .laptop,
+        .database,
+        .power,
+        .upload,
+        .server {
+            width: 100%;
+        }
+    }
+}

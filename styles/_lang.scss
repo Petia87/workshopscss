@@ -1,0 +1,20 @@
+@import"variables";
+@import "mixin";
+.flex_c {
+    @include flex_wrap;
+
+    
+}
+
+.languages__h2 {
+    @include p;
+    padding: 2rem;
+}
+
+.logo{
+    transition: transform 0.5s;
+background-color: cornflowerblue;
+   &:hover{
+        transform: translateY(-10px);
+    }
+}

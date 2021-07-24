@@ -1,0 +1,119 @@
+@import "variables";
+@import "mixin";
+/*DOC*/
+.docs {
+    color: $color_light;
+    background-color: $color_dark;
+
+    .docs_flex {
+        @include flex_wrap;
+        justify-content: space-between;
+        margin: 0 4rem;
+        padding-bottom: 2rem;
+
+        .docs__container {
+            width: 55%;
+            text-align: left;
+            padding-bottom: 2rem;
+
+            h2 {
+                @include h2;
+                font-size: 2.6rem;
+                padding-top: 1.5rem;
+            }
+
+            p {
+                @include p;
+                padding-top: 1rem;
+            }
+        }
+
+        .docs__img {
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+/*MAIN*/
+.main-doc {
+    background: $color_light;
+    .main-doc__left {
+        background: $bacground_light;
+
+        h3 {
+            padding: 1rem 0;
+            font-size: 1.3rem;
+        }
+        li {
+            border-bottom: 1px solid rgb(204, 204, 204);
+            padding: 0.5rem 0;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 300;
+
+            a {
+                color: $bacground_dark;
+            }
+        }
+    }
+    .main-doc__right {
+        h3 {
+            padding-top: 1.5rem;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 300;
+            padding: 1rem 0;
+        }
+        .box {
+            background-color: rgb(92, 184, 92);
+            color: $color_light;
+            font-size: 1.1rem;
+            padding: 1.2rem;
+            font-weight: 400;
+            span {
+                font-weight: 600;
+            }
+        }
+        .main-doc__right_p {
+            font-weight: 300;
+            padding: 0;
+        }
+        .main-doc__right_h3 {
+            font-weight: 400;
+            padding: 1.5rem 0;
+        }
+        .black {
+            background-color: $color_full_dark;
+            color: $color_light;
+            padding: 1rem;
+            font-size: 0.8rem;
+            font-weight: 400;
+            font-family: monospace;
+        }
+        .main-doc__button {
+            @include button;
+            background: $color_dark;
+            border: none;
+            color: $color_light;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .docs .docs_flex .docs__container{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .docs .docs_flex .docs__img {
+        width: 50%;
+    }
+}

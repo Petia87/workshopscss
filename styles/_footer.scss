@@ -1,0 +1,25 @@
+@import "variables";
+
+.footer {
+    background-color: $bacground_dark;
+    color: $color_light;
+    height: 100%;
+
+    .footer_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3rem 5rem;
+        font-size: 1rem;
+    }
+
+     a,
+    ul li a {
+        padding: 1.5rem;
+        color: $color_light;
+    }
+    .footer_container_center,
+    .footer_container_right {
+        color: $color_light;
+    }
+}
