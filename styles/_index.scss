@@ -1,0 +1,153 @@
+@import "variables";
+@import "mixin";
+
+/*Navigation*/
+.navigation {
+    background-color: $color_dark;
+
+    .navigation__logo,
+    .navigation__item {
+        color: $color_light;
+    }
+
+    .navigation__ {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0rem;
+
+        .navigation__logo {
+            font-size: 2rem;
+        }
+        .navigation__item {
+            padding: 2rem;
+            text-decoration: none;
+            @include p;
+        }
+
+        .navigation__item:hover {
+            border-bottom: 1px solid $color_light;
+        }
+    }
+}
+/*Showcase*/
+/*Stats*/
+.stats {
+    padding-top: 100px;
+
+    .stats__colum {
+        @include flex_wrap;
+        padding: 3rem;
+    }
+    .stats_fa,
+    .stats__colum__h4 {
+        color: $color_full_dark;
+    }
+
+    .stats_fa {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .stats__colum__p {
+        @include p_large;
+        color: $font_fdark;
+        padding-top: 1.5rem;
+    }
+
+    .stats__colum__h4 {
+        font-size: 2.2rem;
+        font-weight: 400;
+    }
+}
+/*Cli*/
+.cli__ {
+    @include flex_wrap;
+
+    .cli__img {
+        width: 50%;
+        border-radius: 2%;
+        padding: 2rem 4rem;
+        padding-top: 6rem;
+        img {
+            width: 100%;
+        }
+    }
+    .cli__card {
+        padding: 0 0 3rem 0rem;
+
+        width: 30%;
+        .cli__card__p {
+            background-color: $color_light;
+            color: $color_full_dark;
+            @include p_large;
+            padding: 1.3rem 1rem;
+            margin: 3rem 0;
+        }
+    }
+}
+/*Cloud*/
+.cloud {
+    background-color: $color_dark;
+    justify-content: center;
+
+    .cloud_h2,
+    .cloud_p {
+        color: $color_light;
+    }
+
+    .cloud_h2 {
+        @include h2;
+    }
+
+    .cloud_p {
+        @include p;
+        padding-bottom: 2rem;
+    }
+
+    .cloud_btn {
+        @include button;
+        border: 1px solid $bacground_dark;
+        background-color: $bacground_dark;
+        color: $color_light;
+    }
+}
+/*Languages*/
+
+.languages__h2 {
+    @include p;
+    padding: 2rem;
+}
+
+.languages__card {
+    @include flex_wrap;
+    .logo {
+        transition: transform 0.5s;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/*Footer*/
+.footer {
+    background-color: $bacground_dark;
+    color: $color_light;
+    height: 100%;
+
+    .footer_container {
+        @include flex_wrap;
+        padding: 3rem 5rem;
+        font-size: 1rem;
+    }
+
+    a,
+    ul li a {
+        padding: 1.5rem;
+        color: $color_light;
+    }
+    .footer_container_center,
+    .footer_container_right {
+        color: $color_light;
+    }
+}

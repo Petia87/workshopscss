@@ -1,0 +1,21 @@
+@import"variables";
+@import "mixin";
+
+
+.languages__h2 {
+    @include p;
+    padding: 2rem;
+}
+
+.languages__card{
+    @include flex_wrap;
+    .logo{
+        transition: transform 0.5s;
+    background-color: cornflowerblue;
+       &:hover{
+            transform: translateY(-10px);
+        }
+    }
+    
+}
+

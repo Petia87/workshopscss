@@ -1,10 +1,10 @@
 @import "variables";
-@import "mixin";
+
 .stats {
-    padding-top: 100px;
+    padding-top: 100px; 
 
     .stats__colum {
-        @include flex_wrap;
+               @include flex_wrap;
         padding: 3rem;
     }
     .stats_fa,
@@ -19,12 +19,12 @@
 
     .stats__colum__p {
         @include p_large;
-        color: $font_fdark;
-        padding-top: 1.5rem;
+        color:$font_fdark;
+       padding-top: 1.5rem;
     }
 
-    .stats__colum__h4 {
-        font-size: 2.2rem;
+    .stats__colum__h4{
+        font-size: 2rem;
         font-weight: 400;
     }
 }

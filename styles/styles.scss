@@ -1,14 +1,16 @@
-@import "navigation";
+//@import "navigation";
 @import "show";
-@import "stat";
-@import "cliLangCloud";
-@import "footer";
+//@import "stat";
+//@import "cliLangCloud";
+//@import "footer";
+//@import "cloud";
+//@import "lang";
 @import "variables";
-@import "cloud";
-@import "lang";
+
 @import "second";
 @import"doc";
 @import "typography";
+@import"index";
 
 
 /*{
@@ -22,9 +24,9 @@ body {
     font-size: 12px;
 }
 
-*/
 
-/*h1, h2 {
+/*
+h1, h2 {
     font-weight: 300;
     line-height: 1.2rem;
     margin: 10px 0;
