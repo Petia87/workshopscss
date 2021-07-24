@@ -8,9 +8,10 @@
 @import "lang";
 @import "second";
 @import"doc";
+@import "typography";
 
 
-* {
+/*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,13 +22,13 @@ body {
     font-size: 12px;
 }
 
+*/
 
-
-h1, h2 {
+/*h1, h2 {
     font-weight: 300;
     line-height: 1.2rem;
     margin: 10px 0;
-}
+}*/
 
 .container {
     max-width: 1100px;
@@ -58,6 +59,7 @@ ul,a {
     margin: 1rem;
 }
 
+/*
 @media (max-width: 750px) {
     
     h1, h2 {
@@ -110,7 +112,7 @@ ul,a {
         padding-bottom: 2rem;
     }
     
-}
+}*/
 
 
 

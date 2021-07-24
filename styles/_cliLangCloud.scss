@@ -1,6 +1,28 @@
-@import"variables";
+@import "variables";
+.cli__ {
+    @include flex_wrap;
 
-.img {
-    width: 100%;
+    .cli__img {
+        width: 50%;
+        border-radius: 2%;
+        padding: 2rem 4rem;
+        padding-top: 6rem;
+        img{
+            width: 100%;
+        }
+    }
+    .cli__card {
+        padding:0 0 3rem 0rem;
+
+        width: 30%;
+        .cli__card__p {
+            background-color: $color_light;
+            color: $color_full_dark;
+            @include p_large;
+           padding:1.3rem 1rem;
+           margin: 3rem 0;
+
+           
+        }
+    }
 }
-

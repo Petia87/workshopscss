@@ -16,8 +16,23 @@
     line-height: 1.7rem;
    
 }
+@mixin p_large {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+   
+}
 @mixin flex_wrap {
-    display: flex;
+display: flex;
    flex-wrap: wrap;
    text-align: center;
+   justify-content: space-between;
 }
+@mixin flex_column {
+    display: flex;
+    flex-direction: column;
+       flex-wrap: wrap;
+       text-align: center;
+       justify-content: space-between;
+    }
+
+    
