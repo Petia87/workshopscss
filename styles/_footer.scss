@@ -6,12 +6,12 @@
     height: 100%;
 
     .footer_container {
-        @include flex_wrap
+        @include flex_wrap;
         padding: 3rem 5rem;
         font-size: 1rem;
     }
 
-     a,
+     a, 
     ul li a {
         padding: 1.5rem;
         color: $color_light;

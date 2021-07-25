@@ -1,8 +1,28 @@
-.showcase {
-  height: 400px;
-  color: white;
-  position: relative;
+.navigation {
   background-color: #057aec;
+}
+.navigation .navigation__logo,
+.navigation .navigation__item {
+  color: white;
+}
+.navigation .navigation__ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+.navigation .navigation__ .navigation__logo {
+  font-size: 2rem;
+}
+.navigation .navigation__ .navigation__item {
+  padding: 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+}
+.navigation .navigation__ .navigation__item:hover {
+  border-bottom: 1px solid white;
 }
 
 .showcase::before,
@@ -86,6 +106,135 @@
   width: 100%;
   padding: 3px;
   font-size: 0.8rem;
+}
+
+.stats {
+  padding-top: 100px;
+}
+.stats .stats__colum {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  padding: 3rem;
+}
+.stats .stats_fa,
+.stats .stats__colum__h4 {
+  color: #333333;
+}
+.stats .stats_fa {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.stats .stats__colum__p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #1c3fa8;
+  padding-top: 1.5rem;
+}
+.stats .stats__colum__h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.cli__ {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.cli__ .cli__img {
+  width: 50%;
+  border-radius: 2%;
+  padding: 2rem 4rem;
+  padding-top: 6rem;
+}
+.cli__ .cli__img img {
+  width: 100%;
+}
+.cli__ .cli__card {
+  padding: 0 0 3rem 0rem;
+  width: 30%;
+}
+.cli__ .cli__card .cli__card__p {
+  background-color: white;
+  color: #333333;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  padding: 1.3rem 1rem;
+  margin: 3rem 0;
+}
+
+.footer {
+  background-color: #002240;
+  color: white;
+  height: 100%;
+}
+.footer .footer_container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+  font-size: 1rem;
+}
+.footer a,
+.footer ul li a {
+  padding: 1.5rem;
+  color: white;
+}
+.footer .footer_container_center,
+.footer .footer_container_right {
+  color: white;
+}
+
+.cloud {
+  background-color: #057aec;
+}
+.cloud .cloud_h2,
+.cloud .cloud_p {
+  color: white;
+}
+.cloud .cloud_h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.3rem;
+}
+.cloud .cloud_p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  padding-bottom: 2rem;
+}
+.cloud .cloud_btn {
+  border-radius: 7%;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 300;
+  border: 1px solid #002240;
+  background-color: #002240;
+  color: white;
+}
+
+.languages__h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  padding: 2rem;
+}
+
+.languages__card {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.languages__card .logo {
+  transition: transform 0.5s;
+  background-color: cornflowerblue;
+}
+.languages__card .logo:hover {
+  transform: translateY(-10px);
 }
 
 /*features*/
@@ -353,6 +502,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body, form, select, input, textarea {
@@ -404,169 +554,6 @@ p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
 h1 + p {
   margin-top: -0.2em;
   font-style: italic;
-}
-
-/*Navigation*/
-.navigation {
-  background-color: #057aec;
-}
-.navigation .navigation__logo,
-.navigation .navigation__item {
-  color: white;
-}
-.navigation .navigation__ {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 0rem;
-}
-.navigation .navigation__ .navigation__logo {
-  font-size: 2rem;
-}
-.navigation .navigation__ .navigation__item {
-  padding: 2rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-}
-.navigation .navigation__ .navigation__item:hover {
-  border-bottom: 1px solid white;
-}
-
-/*Showcase*/
-/*Stats*/
-.stats {
-  padding-top: 100px;
-}
-.stats .stats__colum {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-  padding: 3rem;
-}
-.stats .stats_fa,
-.stats .stats__colum__h4 {
-  color: #333333;
-}
-.stats .stats_fa {
-  font-size: 3rem;
-  padding: 1rem;
-}
-.stats .stats__colum__p {
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  color: #1c3fa8;
-  padding-top: 1.5rem;
-}
-.stats .stats__colum__h4 {
-  font-size: 2.2rem;
-  font-weight: 400;
-}
-
-/*Cli*/
-.cli__ {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-}
-.cli__ .cli__img {
-  width: 50%;
-  border-radius: 2%;
-  padding: 2rem 4rem;
-  padding-top: 6rem;
-}
-.cli__ .cli__img img {
-  width: 100%;
-}
-.cli__ .cli__card {
-  padding: 0 0 3rem 0rem;
-  width: 30%;
-}
-.cli__ .cli__card .cli__card__p {
-  background-color: white;
-  color: #333333;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  padding: 1.3rem 1rem;
-  margin: 3rem 0;
-}
-
-/*Cloud*/
-.cloud {
-  background-color: #057aec;
-  justify-content: center;
-}
-.cloud .cloud_h2,
-.cloud .cloud_p {
-  color: white;
-}
-.cloud .cloud_h2 {
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 2.3rem;
-}
-.cloud .cloud_p {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-  padding-bottom: 2rem;
-}
-.cloud .cloud_btn {
-  border-radius: 7%;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 300;
-  border: 1px solid #002240;
-  background-color: #002240;
-  color: white;
-}
-
-/*Languages*/
-.languages__h2 {
-  font-size: 1.2rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-  padding: 2rem;
-}
-
-.languages__card {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-}
-.languages__card .logo {
-  transition: transform 0.5s;
-}
-.languages__card .logo:hover {
-  transform: translateY(-10px);
-}
-
-/*Footer*/
-.footer {
-  background-color: #002240;
-  color: white;
-  height: 100%;
-}
-.footer .footer_container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: space-between;
-  padding: 3rem 5rem;
-  font-size: 1rem;
-}
-.footer a,
-.footer ul li a {
-  padding: 1.5rem;
-  color: white;
-}
-.footer .footer_container_center,
-.footer .footer_container_right {
-  color: white;
 }
 
 /*{

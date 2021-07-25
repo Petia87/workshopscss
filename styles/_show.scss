@@ -1,12 +1,5 @@
 @import "variables";
 @import "mixin";
-.showcase {
-    height: 400px;
-    color: $color_light;
-    position: relative;
-    background-color: $color_dark;
-}
-
 .showcase::before,
 .showcase::after {
     content: "";
